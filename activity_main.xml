@@ -6,34 +6,66 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
-
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textSize="20dp"
+        android:id="@+id/text1"
+        android:text="1" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textSize="20dp"
+        android:id="@+id/text2"
+        android:text="2" />
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="네이버 홈페이지 열기"
-        android:textSize="30dp"
-        android:id="@+id/button1"
-        >   </Button>
+        android:textSize="20dp"
+        android:layout_margin="5dp"
+        android:id="@+id/add1"
+        android:onClick="addClick"
+        android:text="더하기" />
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="911 응급전화 하기"
-        android:textSize="30dp"
-        android:id="@+id/button2"
-        ></Button>
+        android:textSize="20dp"
+        android:layout_margin="5dp"
+        android:onClick="mulClick"
+        android:id="@+id/mul1"
+        android:text="곱하기" />
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="갤러리 열기"
-        android:textSize="30dp"
-        android:id="@+id/button3"
-        ></Button>
+        android:textSize="20dp"
+        android:layout_margin="5dp"
+        android:onClick="subClick"
+        android:id="@+id/btnSub"
+        android:text="빼기" />
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="끝내기"
-        android:textSize="30dp"
-        android:id="@+id/button4"
-        ></Button>
-
+        android:textSize="20dp"
+        android:onClick="divClick"
+        android:layout_margin="5dp"
+        android:id="@+id/div1"
+        android:text="나누기" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:onClick="restClick"
+        android:layout_margin="5dp"
+        android:id="@+id/rest1"
+        android:text="나머지 몫" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/result1"
+        android:layout_margin="5dp"
+        android:textSize="20dp"
+        android:text="d"
+        />
 </LinearLayout>
